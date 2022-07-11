@@ -1,11 +1,19 @@
 
-def numeroPrimo(numero):
+def numeroPrimo():
+    numero = int(input('Digite un numero: '))
+
     if(numero>1 and numero%2!=0):
-        return 'Es Primo'
+        print('Es Primo')
     elif(numero==2):
-        return 'Es primo'    
+        print('Es primo')
+    else:
+        print('No es primo')    
 
-    return 'No es primo'    
+def anoBisiesto():
+    ano = int(input('Digite el año: '))
 
-numero = int(input('Digite un numero: '))
-print('El numero: ',numeroPrimo(numero))
+    if(ano%4==0 and ano%400!=0):
+        print('El año es bisiesto')
+
+numeroPrimo()
+anoBisiesto()
