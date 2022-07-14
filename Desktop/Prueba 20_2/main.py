@@ -36,7 +36,7 @@ def buscarAlumno(nombre):
         return
 
     #return True
-    print(f"Alumn@ {nombre} Existe!")    
+    print(f"Alumn@ {data}")    
 
 def verTabla():
     conn = sqlite3.connect('prueba20.db')
